@@ -1,0 +1,8 @@
+@import 'node_modules/normalize.css/normalize';
+@import 'bourbon';
+@import 'neat';
+
+@import 'src/_styles/_modules/base.scss';
+@import 'src/_styles/_modules/nav.scss';
+@import 'src/_styles/_modules/carousel.scss';
+@import 'src/_styles/_modules/articles.scss';

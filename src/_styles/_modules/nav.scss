@@ -1,0 +1,100 @@
+.header-inner {
+	background: rgba(0, 0, 0, 0.8);
+	height: 60px;
+}
+.header-logo {
+	float: left;
+	padding-right: 18px;
+	position: relative;
+	z-index: 100;
+
+	svg {
+		display: block;
+		fill: #9f9f9f;
+		position: relative;
+		top: 20px;
+	}
+}
+.header-logo-letter {
+	fill: #9f9f9f;
+}
+nav {
+	@media (min-width: 768px) {
+		float: left;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+
+		&.active a {
+			color: #e34e33;
+		}
+	}
+	a {
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 1;
+		padding: 35px 11px 12px;
+		text-decoration: none;
+
+		&:hover {
+			color: #9f9f9f;
+		}
+	}
+}
+.tweet {
+	float: right;
+	position: relative;
+	top: 20px;
+}
+
+/* CSS Responsive Menu || https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
+.show-menu {
+	border: 1px solid #282828;
+	color: #fff;
+	display: none;
+	float: right;
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	top: 10px;
+	z-index: 100;
+}
+input[type=checkbox] {
+	display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+	background: #000;
+	display: block;
+	margin: 0 -10px;
+	position: relative;
+	top: 10px;
+	z-index: 10;
+}
+@media screen and (max-width : 767px){
+	ul {
+		position: static;
+		display: none;
+	}
+	li {
+		margin-bottom: 1px;
+	}
+	ul li, li a {
+		width: 100%;
+	}
+	nav a {
+		padding: 20px;
+	}
+	.show-menu {
+		display:inline-block;
+	}
+	.tweet {
+		display: none;
+	}
+}

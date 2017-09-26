@@ -1,0 +1,48 @@
+.hero {
+	background: #fff;
+
+	img { margin: auto; }
+}
+.slick-prev {
+	left: auto;
+	right: 130px;
+	&:hover::before {
+		background-position: 0 100%;
+	}
+}
+.slick-next {
+	right: 88px;
+	&::before {
+		background-position: 100% 0;
+	}
+	&:hover::before {
+		background-position: 100% 100%;
+	}
+}
+.slick-prev,
+.slick-next {
+	bottom: 23px;
+	top: auto;
+	z-index: 100;
+
+	&::before {
+		background-image: url(/images/arrow-sprite.png);
+		background-repeat: no-repeat;
+		content: ' ';
+		display: block;
+		height: 29px;
+		width: 17px;
+	}
+}
+.slick-dots {
+	bottom: 23px;
+}
+.slick-dots li button:before {
+	color: #fff;
+	font-size: 10px;
+	opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+	color: #e34e33;
+	opacity: 1;
+}
